@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="color-1.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
+    <!--  Choix du style -->
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="style-switcher.css">
+</head>
+<body>
+<!--  === Container Principale Debut === -->
+<div class="main-container">
+       
+    <!-- === Aside Start ===-->
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>S</span>tephanos</a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html" ><i class="fa fa-home"></i>   <span>&nbsp;Accueil</span></a></li>
+            <li><a href="index.html" class="active2"><i class="fa fa-user"></i>     <span>&nbsp;Apropos</span></a></li>
+            <li><a href="index.html" class="active3"><i class="fa fa-list"></i>     <span>&nbsp;Service</span></a></li>
+            <li><a href="index.html" class="active4"><i class="fa fa-briefcase"></i>   <span>&nbsp;Portfolio</span></a></li>
+            <li><a href="blog.html" class="active"><i class="fa fa-rss-square"></i>     <span>&nbsp;Blog</span></a></li>
+            <li><a href="index.html" class="active5"><i class="fa fa-comments"></i>   <span>&nbsp;Contact</span></a></li>
+
+        </ul>
+    </div>
+    <!-- === Aside End ===-->
+    <!-- === Main content Start ===-->
+    <div class="main-content">
+            <!-- === Home Section Start ===-->
+            <section class="home section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Mon Blog</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Mon premier projet  <span class="name">Masseka market</span></h3>
+                            <h3 class="my-profession">Vente de tenues <span class="typing">Traditionnelles africaine</span></h3>
+                            <p>Nous exposant a un large public les marque africaine en terme d'accroutement, plus de 100 modèle de tenues traditionnelle et avec une possibilité de faire une commande avec un modele externe qui ne sont pas disponible sur la plateforme mais que les acteurs (ouvriers) vont se faire le plaisir de les rendre disponibles dans un bref delais ainsi prosséder à la livraison par l'équipe en charge pour la satisfaction de nos clients, le client avant tout</p>
+                            <a href="#" class="btn hire-me">Plus de details</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <h2><a href="#" style="color: white;">Site et appli web bientôt sur massaka store</a></h2>
+                            <div>
+                                <br/>
+                                <br/>
+                                <br/>
+
+                                <h3>La version disponible est la première avec la possibilité de faire des ventes de tenu en ligne, consulter son panier en toute autonomie, le suivi de livraison sera bientôt disponible sur l'application</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </div>
+    <!-- === Main content End ===-->
+
+</div>
+<!--  === Container Principale Fin === -->
+
+<!-- Choix du fichier de Style debut -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fa fa-sun"></i>
+        </div>
+        <h4>Couleurs de Theme</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+
+        </div>
+    </div>
+<!-- Choix du fichier de Style fin -->
+
+<!-- === Fichier Javascript === -->
+    <script src="script.js"></script>
+    <script src="style-switcher.js"></script>
+
+</body>
+</html>
